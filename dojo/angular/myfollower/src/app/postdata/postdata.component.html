@@ -1,0 +1,9 @@
+<input type="text" class="form-contorl" (keyup.enter)="createPost(title)"#title>
+<ul>
+    
+<li *ngFor="let p of  posts">{{p.title}}
+    <button class="btn btn-primary" 
+      (click)=" deletePost(p)"
+    >delete</button>
+</li>
+</ul>
