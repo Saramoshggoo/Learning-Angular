@@ -26,8 +26,7 @@ export class PostdataComponent implements OnInit {
 
 
   createPost(input: HTMLInputElement) {
-    const pos
-    t = { title: input.value };
+    const post = { title: input.value };
     (this.posts as any[]).splice(0, 0, post);
     input.value = '';
     this.service.Create(post)
